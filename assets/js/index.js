@@ -1,6 +1,6 @@
 $(function() {
     // 获取用户信息
-    geUserInfo();
+    getUserInfo();
 
     var layer = layui.layer;
     $("#btnLogout").on('click', function() {
@@ -13,7 +13,7 @@ $(function() {
     })
 })
 
-function geUserInfo() {
+function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
         header: {
